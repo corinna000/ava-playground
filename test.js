@@ -6,7 +6,7 @@ test('foo', t => {
 	t.pass();
 });
 
-test('bar', async test => {
+test('bar', async t => {
 	t.plan(1);
 
 	const bar = Promise.resolve('bar').then(delay(200));
