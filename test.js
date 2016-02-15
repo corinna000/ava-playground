@@ -3,13 +3,13 @@ import test from 'ava';
 import delay from 'delay';
 
 test('foo', t => {
-    t.pass();
+	t.pass();
 });
 
-test('bar', async t => {
-    t.plan(1);
+test('bar', async test => {
+	t.plan(1);
 
-    const bar = Promise.resolve('bar').then(delay(200));
+	const bar = Promise.resolve('bar').then(delay(200));
 
-    t.is(await bar, 'bar');
+	t.is(await bar, 'bar');
 });
