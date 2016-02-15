@@ -20,7 +20,7 @@ module.exports = {
         ],
         "quotes": [
             2,
-            "double"
+            "single"
         ],
         "semi": [
             2,
